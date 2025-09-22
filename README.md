@@ -3,11 +3,13 @@
 
 **Conteúdo da Disciplina**: Grafos 2<br>
 
-## Alunos
+## Alunos - Grupo 42
 
 |Matrícula | Aluno |
 | -- | -- |
 | 22/1008445  | Samara Letícia Alves dos Santos |
+
+
 
 ## Sobre
 
@@ -18,11 +20,12 @@ Este é um repositório para armazenar soluções sobre problemas de grafos no l
 
 ![1334-1](assets/1334-1.png)
 ![1334-2](assets/1334-2.png)
-
+![1976-1](assets/1976-1.png)
+![1976-2](assets/1976-2.png)
 
 ## Apresentação
 
-Vídeo disponível em: [youtube]()
+Vídeo disponível em: [youtube](https://youtu.be/C7bkfC1_ZVo)
 
 ## Outros
 
