@@ -5,7 +5,6 @@
  * @return {number}
  */
 var findTheCity = function(n, edges, distanceThreshold) {
-    // Função para criar o grafo em forma de lista de adjacência
     function criaGrafo(n, edges) {
         const grafo = Array.from({ length: n }, () => []);
         for (let [u, v, peso] of edges) {
@@ -15,16 +14,13 @@ var findTheCity = function(n, edges, distanceThreshold) {
         return grafo;
     }
 
-    // Implementação de Dijkstra
     function dijkstra(grafo, n, inicio, distanceThreshold) {
         const distancia = Array(n).fill(Infinity);
         distancia[inicio] = 0;
 
-        // MinHeap simples usando array + sort
-        let minHeap = [[0, inicio]]; // [distância, nó]
+        let minHeap = [[0, inicio]]; 
 
         while (minHeap.length > 0) {
-            // Extraí o menor elemento
             minHeap.sort((a, b) => a[0] - b[0]);
             const [distAtual, noAtual] = minHeap.shift();
 
@@ -39,9 +35,7 @@ var findTheCity = function(n, edges, distanceThreshold) {
             }
         }
 
-        // Conta quantas cidades são alcançáveis dentro do limite
         return distancia.filter(d => d <= distanceThreshold).length - 1; 
-        // "-1" para não contar a própria cidade
     }
 
     const grafo = criaGrafo(n, edges);
@@ -54,7 +48,7 @@ var findTheCity = function(n, edges, distanceThreshold) {
 
         if (qtdCidadesAcessiveis <= menorQtdCidades) {
             menorQtdCidades = qtdCidadesAcessiveis;
-            result = i; // mantém o maior índice em caso de empate
+            result = i; 
         }
     }
 
